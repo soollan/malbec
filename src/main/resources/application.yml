@@ -1,0 +1,14 @@
+server :
+  port : 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #exclude: bean,dev
+      base-path: '/malbec/actuator'
+
+  endpoint:
+    health:
+      show-details: always
